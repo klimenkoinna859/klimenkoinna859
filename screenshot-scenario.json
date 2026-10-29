@@ -1,0 +1,51 @@
+{
+  "notes": "tapFrac values are computed from the real RectTransforms, not estimated. Canvas reference 1242x2688 with Expand scaling resolves to 1242x2760 on a 1080x2400 device, and AspecterSA letterboxes the panels by 36 units top and bottom, so fracX = panelX/1242 and fracY = (36 + 2688 - panelY)/2760 with panelY measured from the bottom. Every step changes the screen, and the pop opened in step 7 is closed in step 8.",
+  "steps": [
+    {
+      "waitLoader": true,
+      "shot": "01_AgeNotice"
+    },
+    {
+      "tapFrac": [0.500, 0.855],
+      "label": "I AM 18 OR OLDER",
+      "wait": 2.5,
+      "shot": "02_Lobby"
+    },
+    {
+      "tapFrac": [0.500, 0.758],
+      "label": "PLAY",
+      "waitLoader": true,
+      "shot": "03_Reels_idle"
+    },
+    {
+      "tapFrac": [0.500, 0.875],
+      "label": "SPIN",
+      "wait": 5,
+      "shot": "04_Reels_result"
+    },
+    {
+      "tapFrac": [0.725, 0.712],
+      "label": "STAKE 50",
+      "wait": 2,
+      "shot": "05_Reels_stake"
+    },
+    {
+      "tapFrac": [0.500, 0.875],
+      "label": "SPIN",
+      "wait": 5,
+      "shot": "06_Reels_stars"
+    },
+    {
+      "tapFrac": [0.878, 0.067],
+      "label": "PAUSE",
+      "wait": 2.5,
+      "shot": "07_Intermission"
+    },
+    {
+      "tapFrac": [0.730, 0.637],
+      "label": "RESUME",
+      "wait": 2.5,
+      "shot": "08_Reels_resumed"
+    }
+  ]
+}
